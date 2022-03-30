@@ -1,0 +1,132 @@
+.header {
+
+    height: 5rem;
+    background-color: white;
+    padding: 0 10%;
+    text-align: center;
+}
+
+.header nav {
+    height: 100%;
+}
+
+.header ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header li {
+    margin: 0 1rem;
+    width: 5rem;
+    font-size: larger;
+    font-family: 'Gavora Personaluse';
+}
+
+.header a {
+    text-decoration: none;
+    color: rgb(184, 171, 2);
+    font-weight: bold;
+
+}
+
+/* .logo img {
+    width: 120px;
+    height: 80px;
+    margin-right: 0.5rem;
+} */
+.logo {
+  width: auto;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+
+
+.dark-mode__toggle {
+    background: papayawhip;
+    border-radius: 50px;
+    border: 1px solid rgb(0, 0, 0);
+    height: 20px;
+    position: relative;
+    width: 40px;
+  }
+  .toggle {
+    background: #f68819;
+    border-radius: 50px;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    transition: 0.2s;
+    width: 21.5px;
+  }
+  .toggled {
+    left: 18px;
+  }
+  
+  /* .header {
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    padding: 0 3%;
+    width: 100%;
+    background-color: #000000;
+  } */
+  
+  .dark-mode {
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+  }
+  .dark-mode .header {
+    background-color: rgb(0, 0, 0);
+    border: none;
+  }
+  .dark-mode .link {
+    color: #fff;
+    /* background-color: rgb(44, 43, 43); */
+  }
+
+  .dark-mode .card:hover {
+    box-shadow: 0 0 3px #fff, 0 0 6px #fff, 0 0 9px #fff, 0 0 12px #ee2e31,
+      0 0 20px #ee2e31, 0 0 25px #ee2e31, 0 0 30px #ee2e31, 0 0 35px #ee2e31;
+  }
+
+  .dark-mode .Home-Item-label {
+    padding: 15px;
+    color: rgb(248, 246, 246);
+    font-weight: bold;
+  }
+
+.dark-mode .Home-Item-Wrapper {
+  /* background: white; */
+  display: flex;
+  font-family: sans-serif;
+  border: 3px solid yellow;
+  border-radius: 10px;
+  margin: 15px;
+  align-items: center;
+  /* flex-direction: column; */
+}
+
+.dark-mode .Home-Item-Wrapper img {
+  display: block;
+  padding: 6px;
+  /* width: 500px; */
+  border-right: 3px solid yellow;
+  border-radius: 20px;
+  width: 40vw;
+  height: 30vh;
+  object-fit: fill;
+  
+}
+
+.dark-mode .info{
+  padding-left: 0px;
+  color: white;
+}

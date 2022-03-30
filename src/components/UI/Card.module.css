@@ -1,0 +1,15 @@
+.card {
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; */
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    background-color: #272b30;
+    color: #c7b206;
+    padding: 20px;
+    cursor: pointer;
+  }
+
+  
