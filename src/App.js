@@ -13,7 +13,7 @@ import SpecsDetail from './pages/Specie';
 function App() {
 
   return (
-    <div>
+    <div className='test'>
     <Nav />
       <main>
         <Switch>
