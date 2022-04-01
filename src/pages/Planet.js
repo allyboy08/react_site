@@ -26,16 +26,20 @@ const PlanetDetail = (props) => {
     <div>
       <Link className="link" to="/planets">
         {" "}
-        Return to Planets{" "}
+        ←Back{" "}
       </Link>
       <div className="middle-row-detail">
       <div className="card-detail">
       <h1>{data.name}</h1>
       <ul className="info">
-        <li> climate: {data.climate}</li>
-        <li> population: {data.population}</li>
-        <li> terrain: {data.terrain}</li>
-        
+        <li> climate: <span className="see">{data.climate}</span></li>
+        <li> population: <span className="see">{data.population}</span></li>
+        <li> terrain: <span className="see">{data.terrain}</span></li>
+        <li> Gravity: <span className="see">{data.gravity}</span></li>
+        <li> Diameter: <span className="see">{data.diameter}</span></li>
+        <li> Orbital Period: <span className="see">{data.orbital_period}</span></li>
+        <li> Rotation Period: <span className="see">{data.rotation_period}</span></li>
+        <li> Surface Water: <span className="see">{data.surface_water}</span></li>
       </ul>
       </div>
       </div>

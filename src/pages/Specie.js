@@ -6,6 +6,8 @@ const PlanetDetail = (props) => {
     const { id } = useParams();
     const [planetId, setPlanetId] = useState();
     const [data, setData] = useState({});
+    
+
     useEffect(() => {
     setPlanetId(id);
     }, [id]);
@@ -24,16 +26,20 @@ const PlanetDetail = (props) => {
     <div>
       <Link className="link" to="/species">
         {" "}
-        Return to Species{" "}
+        ←Back{" "}
       </Link>
       <div className="middle-row-detail">
       <div className="card-detail">
       <h1>{data.name}</h1>
       <ul className="info">
-        <li> classification: {data.classification}</li>
-        <li> average lifespan: {data.average_lifespan}</li>
-        <li> language: {data.language}</li>
-        
+        <li> classification: <span className="see">{data.classification}</span></li>
+        <li> average lifespan: <span className="see">{data.average_lifespan}</span></li>
+        <li> language: <span className="see">{data.language}</span></li>
+        <li> Average Height: <span className="see">{data.average_height}</span></li>
+        <li> Designation: <span className="see">{data.designation}</span></li>
+        <li> Eye Colours: <span className="see">{data.eye_colors}</span></li>
+        <li> Hair Colours: <span className="see">{data.hair_colors}</span></li>
+        <li> Skin Colours: <span className="see">{data.skin_colors}</span></li>
       </ul>
       </div>
       </div>

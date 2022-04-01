@@ -5,7 +5,7 @@ import LoadingSpinner from '../components/UI/Loader';
 import defaultImage from '../assets/tr.jpeg'
 
 const People = () => {
-    const API = "https://swapi.dev/api/people/";
+    const API = "https://swapi.dev/api/people";
     const imgURL = "https://starwars-visualguide.com/assets/img/characters/";
     const [items, setItems] = useState([])
     const [isLoading, setIsLoading] = useState(true)

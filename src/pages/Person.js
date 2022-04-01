@@ -16,6 +16,7 @@ const PeopleDetail = (props) => {
         .then((response) => response.json())
         .then((data) => {
         setData(data);
+        console.log(data.homeworld)
         })
         .catch((err) => console.log("oh no", err));
     }, [charId]);
@@ -25,16 +26,18 @@ const PeopleDetail = (props) => {
     <div >
       <Link className="link" to="/characters">
         {" "}
-        Return to Characters{" "}
+        ←Back{" "}
       </Link>
       <div className="middle-row-detail">
       <div className="card-detail">
       <h1>{data.name}</h1>
       <ul className="info">
-        <li> birth: {data.birth_year}</li>
-        <li> gender: {data.gender}</li>
-        <li> hieght: {data.height}</li>
-        
+        <li> birth: <span className="see">{data.birth_year}</span></li>
+        <li> gender: <span className="see">{data.gender}</span></li>
+        <li> hieght: <span className="see">{data.height + "m"}</span></li>
+        <li> Mass: <span className="see">{data.mass + "kg"}</span></li>
+        <li> Skin Colour: <span className="see">{data.skin_color}</span></li>
+        <li> hair Colour: <span className="see">{data.hair_color}</span></li>
       </ul>
       </div>
       </div>
