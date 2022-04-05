@@ -41,7 +41,7 @@
     /* width: 500px; */
     border-right: 3px solid rgb(0, 0, 0);
     border-radius: 20px;
-    width: 30vw;
+    width: 40vw;
     height: 30vh;
     object-fit: fill;
     
@@ -108,8 +108,8 @@
       /* width: 500px; */
       border-right: 0px;
       border-bottom: 3px solid rgb(0, 0, 0);
-      border-radius: 8px;
-      width: 73vw;
+      border-radius: 14px;
+      width: 73.5vw;
       height: 26vh;
       object-fit: fill;
       

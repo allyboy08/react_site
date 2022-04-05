@@ -24,7 +24,7 @@ const PeopleDetail = (props) => {
 
   return (
     <div >
-      <Link className="link" to="/characters">
+      <Link className="link" to="/characters/">
         {" "}
         ←Back{" "}
       </Link>
