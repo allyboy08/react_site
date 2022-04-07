@@ -79,7 +79,7 @@ img.medium {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  margin-top: 0rem;
+  margin-top: 1rem;
   gap: 0.5rem;
 }
 /* .card-body p:first-child {
@@ -113,7 +113,7 @@ img.medium {
   height: 5vh;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 500px) {
   .card {
     background-color: rgba(91, 91, 93, 0.2);
     backdrop-filter: blur(5px);
@@ -127,8 +127,8 @@ img.medium {
   }
 
   img.medium {
-    width: 274px;
-    height: 446px;
+    width: 296px;
+    height: 378px;
     object-fit: contain;
   }
 

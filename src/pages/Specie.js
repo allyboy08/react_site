@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import '../components/styles/details.css'
 
 const PlanetDetail = (props) => {
+  const imgURL = "https://starwars-visualguide.com/assets/img/species/";
     const { id } = useParams();
     const [planetId, setPlanetId] = useState();
     const [data, setData] = useState({});
@@ -30,11 +31,17 @@ const PlanetDetail = (props) => {
       </Link>
       <div className="middle-row-detail">
       <div className="card-detail">
+      <img
+        
+        className="medium"
+        src={imgURL + id + ".jpg"}
+        alt={"character " + data.name}
+      />
       <h1>{data.name}</h1>
       <ul className="info">
-        <li> classification: <span className="see">{data.classification}</span></li>
-        <li> average lifespan: <span className="see">{data.average_lifespan}</span></li>
-        <li> language: <span className="see">{data.language}</span></li>
+        <li> Classification: <span className="see">{data.classification}</span></li>
+        <li> Average lifespan: <span className="see">{data.average_lifespan}</span></li>
+        <li> Language: <span className="see">{data.language}</span></li>
         <li> Average Height: <span className="see">{data.average_height}</span></li>
         <li> Designation: <span className="see">{data.designation}</span></li>
         <li> Eye Colours: <span className="see">{data.eye_colors}</span></li>

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 
 import { Link} from "react-router-dom";
 import LoadingSpinner from '../components/UI/Loader';
-import defaultImage from '../assets/tr.jpeg'
+import defaultImage from '../assets/jar.png'
 
 const People = () => {
     const API = "https://swapi.dev/api/species/";
